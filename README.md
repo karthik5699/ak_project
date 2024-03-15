@@ -1,4 +1,4 @@
-Sure, let's break down machine learning, neural networks, and convolutional neural networks (CNNs) in detail:
+let's break down machine learning, neural networks, and convolutional neural networks (CNNs) in detail:
 
 ### Machine Learning:
 
