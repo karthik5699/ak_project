@@ -25,6 +25,10 @@ Neural networks are a class of algorithms inspired by the structure and function
 
 4. **Activation Function**: A mathematical function applied to the weighted sum of inputs to introduce non-linearity into the network. Common activation functions include sigmoid, tanh, ReLU, and softmax.
 
+
+![image](https://github.com/karthik5699/ak_project/assets/26967116/9128f3d2-be82-4a35-95a7-1d752f6cee1d)
+
+
 ### Convolutional Neural Networks (CNNs):
 
 Convolutional Neural Networks (CNNs) are a specific type of neural network designed for processing structured grid data, such as images. They are particularly effective for tasks like image classification, object detection, and image segmentation. CNNs have the following key components:
