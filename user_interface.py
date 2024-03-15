@@ -1,3 +1,18 @@
+# This code is for a program that helps in detecting plant diseases using image processing. Let's break down what each part of the code does:
+
+# Importing Libraries: The code starts by importing necessary libraries for the program. These libraries include tkinter for building the graphical user interface, PIL for working with images, and others for image processing and deep learning.
+# Setting up the User Interface: It creates a window using Tkinter with a specific title, size, and background color. Then, it adds a label to the window prompting the user to choose a picture for testing disease.
+# Functions for Handling Diseases: There are functions defined for handling different types of plant diseases such as bacterial, viral, and late blight. These functions create new windows displaying information about the disease and its remedies when the user selects a specific disease.
+# Analysis Function: This function performs the analysis of the selected image to detect plant diseases. It uses a pre-trained convolutional neural network (CNN) model to predict whether the plant is healthy or unhealthy and, if unhealthy, which disease it might have. Depending on the prediction, it displays the status and disease name along with remedies if available.
+# Open Photo Function: This function allows the user to select an image from their computer for analysis. It opens a file dialog for selecting the image, copies it to a designated folder, and displays the image in the GUI window.
+# Overall, the program provides a user-friendly interface for selecting images, analyzing them for plant diseases using a pre-trained model, and providing information about detected diseases and their remedies.
+
+
+
+
+
+
+
 import tkinter as tk  # Importing the tkinter module and aliasing it as 'tk'
 from tkinter.filedialog import askopenfilename  # Importing the askopenfilename function from the filedialog module
 import shutil  # Importing the shutil module for file operations
