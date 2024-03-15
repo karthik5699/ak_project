@@ -1,3 +1,15 @@
+# let's break down what this code does step by step:
+
+# Importing Libraries: The code imports necessary libraries/modules such as OpenCV (cv2) for image processing, numpy (np) for numerical computing, os for interacting with the operating system, shuffle for shuffling lists, and tqdm for displaying progress bars.
+# Defining Directories and Parameters: The code sets up directories for training and testing images, defines parameters such as image size (IMG_SIZE), learning rate (LR), and model name (MODEL_NAME).
+# Labeling Images: There's a function label_img(img) that labels images based on their filenames. It assigns labels [1,0,0,0], [0,1,0,0], [0,0,1,0], or [0,0,0,1] depending on whether the filename starts with 'h', 'b', 'v', or 'l', respectively.
+# Creating Training Data: The function create_train_data() reads images from the training directory, resizes them to the specified IMG_SIZE, assigns labels using the label_img() function, shuffles the data, and saves it as a numpy (.npy) file.
+# Processing Test Data: The function process_test_data() processes test images similarly to training images but does not assign labels. However, this part is currently commented out and not used in the code.
+# Building the Neural Network Model: The code uses the tflearn library to build a convolutional neural network (CNN) model. It defines layers for input, convolution, max pooling, fully connected, dropout, and output, specifying activation functions, optimizer, learning rate, and loss function.
+# Training the Model: The model is trained using the training data, with features (X) and labels (Y) obtained from the training set. It's trained for a specified number of epochs with validation on a test set.
+# Saving the Model: Once trained, the model is saved with the specified MODEL_NAME.
+
+
 # Importing necessary libraries/modules
 import cv2  # OpenCV library for image processing
 import numpy as np  # Library for numerical computing
